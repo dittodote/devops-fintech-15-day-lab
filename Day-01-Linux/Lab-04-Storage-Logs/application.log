@@ -1,0 +1,7 @@
+Ê6-09-17 10:00:01 INFO Application started
+2026-09-17 10:00:05 INFO Database connection successful
+2026-09-17 10:01:12 INFO Payment request received
+2026-09-17 10:01:15 INFO Payment processed successfully
+2026-09-17 10:02:20 WARNING Payment gateway response slow
+2026-09-17 10:03:10 ERROR Database connection timeout
+2026-09-17 10:03:15 INFO Database connection restored
