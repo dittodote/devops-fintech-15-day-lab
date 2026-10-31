@@ -1,0 +1,12 @@
+2026-10-27 10:00:00 INFO Payment service started
+2026-10-27 10:01:00 INFO Transaction processed
+2026-10-27 10:02:00 ERROR Database connection failed
+2026-10-27 10:03:00 INFO Retry started
+2026-10-27 10:04:00 ERROR Payment gateway timeout
+2026-10-27 10:05:00 INFO Service recovered
+EOF2026-10-27 10:00:00 INFO Payment service started
+2026-10-27 10:01:00 INFO Transaction processed
+2026-10-27 10:02:00 ERROR Database connection failed
+2026-10-27 10:03:00 INFO Retry started
+2026-10-27 10:04:00 ERROR Payment gateway timeout
+2026-10-27 10:05:00 INFO Service recovered
