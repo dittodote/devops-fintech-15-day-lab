@@ -1,0 +1,8 @@
+FinTech Payment Application
+
+Version: 1.0
+
+Features:
+- Payment processing
+- Transaction validation
+- Payment status monitoring
