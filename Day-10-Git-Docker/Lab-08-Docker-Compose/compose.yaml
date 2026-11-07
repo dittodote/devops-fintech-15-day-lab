@@ -1,0 +1,8 @@
+services:
+
+  fintech-app:
+    build: .
+    container_name: fintech-compose-app
+    ports:
+      - "8087:8080"
+    restart: unless-stopped
