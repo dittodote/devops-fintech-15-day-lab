@@ -1,0 +1,25 @@
+name: First GitHub Actions Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+  workflow_dispatch:
+
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Welcome
+        run: echo "Welcome to GitHub Actions"
+
+      - name: Check Runner
+        run: hostname
+
+      - name: Check Date
+        run: date
+
+      - name: Check Python
+        run: python3 --version
