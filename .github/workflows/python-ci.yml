@@ -1,0 +1,32 @@
+name: FinTech Python CI
+
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+    branches:
+      - main
+
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set Up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Check Python Version
+        run: python --version
+
+      - name: Run Payment Tests
+        working-directory: Day-11-CI-CD/Lab-03-Automated-Testing
+        run: python -m unittest -v
