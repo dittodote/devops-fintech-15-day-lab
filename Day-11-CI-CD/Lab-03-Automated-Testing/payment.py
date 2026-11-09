@@ -1,6 +1,6 @@
 def validate_payment(amount):
 
-    if amount <= 0:
+    if amount <=0 :
         return "Invalid payment amount"
 
     if amount > 100000:
