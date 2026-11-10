@@ -1,0 +1,39 @@
+pipeline {
+
+    agent any
+
+    stages {
+
+        stage('Welcome') {
+            steps {
+                echo 'Welcome to FinTech CI/CD'
+            }
+        }
+
+        stage('Check Environment') {
+            steps {
+                sh 'whoami'
+                sh 'pwd'
+                sh 'date'
+            }
+        }
+
+        stage('Check Python') {
+            steps {
+                sh 'python3 --version'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                echo 'Building FinTech application'
+            }
+        }
+
+        stage('Complete') {
+            steps {
+                echo 'Pipeline completed successfully'
+            }
+        }
+    }
+}
