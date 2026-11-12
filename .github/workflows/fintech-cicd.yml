@@ -1,3 +1,4 @@
+
 name: FinTech Complete CI Pipeline
 
 on:
@@ -26,11 +27,11 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
+          python-version: "3.12.3"
 
       - name: Run Unit Tests
         working-directory: Day-11-CI-CD/Lab-09-FinTech-CI-CD
-        run: python -m unittest -v
+        run: python3 -m unittest -v
 
   docker-build:
     name: Docker Image Build
